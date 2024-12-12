@@ -1,0 +1,372 @@
+/* Resetting default margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling untuk navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(54, 66, 54, 0.534);
+}
+
+.navbar .logo img {
+    height: 100px; /* Sesuaikan ukuran logo */
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.navbar .nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links li a {
+    font-family: poppins;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 8px 8px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect untuk link navbar */
+.navbar .nav-links li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Styling untuk section */
+.hero {
+    padding: 10px;
+    font-family: poppins;
+}
+.hero h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: white;
+}
+
+.hero p {
+    font-size: 16px;
+    color: white;
+}
+
+/* Styling untuk bagian hero */
+.hero {
+    background-color: rgba(54, 66, 54, 0.534);
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Membuat hero section memenuhi seluruh layar */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero .hero-content p {
+    font-size: 24px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+.hero .hero-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.tombol-hubungi {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn-hubungi {
+    background-color: rgba(54, 66, 54, 0.534);
+    color: white;
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Efek transisi */
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+}
+.btn-hubungi:hover {
+    background-color: #218838; /* Warna hijau lebih gelap */
+    transform: scale(1.1); /* Membesarkan tombol saat di-hover */
+}
+
+
+/* Konten */
+.tentang-kelor {
+    padding: 30px;
+    margin: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+.tentang-kelor p {
+    font-family: poppins;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+/* Styling untuk Kegiatan yang Ditawarkan */
+.kegiatan {
+    padding: 120px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.kegiatan h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Mengubah grid menjadi dua kolom dengan jarak yang lebih luas */
+.kegiatan-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dua kolom */
+    gap: 20px; /* Memberikan jarak lebih besar antar kolom */
+}
+
+/* Memperkecil ukuran setiap kegiatan */
+.kegiatan-item {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.582);
+}
+
+
+.kegiatan-img {
+    width: 100%;
+    height: 300px;
+}
+
+.keterangan {
+    padding: 20px;
+}
+
+.keterangan h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.keterangan p {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+}
+
+/* Responsif untuk ukuran layar lebih kecil */
+@media (max-width: 768px) {
+    .kegiatan-grid {
+        grid-template-columns: 1fr; /* Untuk layar kecil, jadikan satu kolom */
+    }
+}
+
+/* button Selengkapnya */
+.tombol-selengkapnya{
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+.btn-selengkapnya {
+    background-color: rgba(54, 66, 54, 0.534);
+    color: white;
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgb(0, 0, 0); /* Menambahkan box-shadow */
+}
+
+/* Styling untuk Fasilitas */
+.fasilitas {
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.fasilitas h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.fasilitas-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Agar bisa responsif di layar kecil */
+}
+
+.fasilitas-text {
+    flex: 1;
+    padding-left: 20px;
+    max-width: 300px; /* Batasi lebar teks */
+    margin-bottom: 20px;
+}
+
+.fasilitas-text h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.fasilitas-text p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Menyusun gambar dalam grid dengan 2 kolom */
+.fasilitas-images {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dua kolom untuk gambar */
+    gap: 30px;
+    justify-items: center; /* Agar gambar rata tengah */
+}
+
+/* Memperbesar gambar dan memberi bayangan */
+.fasilitas-item {
+    text-align: center;
+}
+
+.fasilitas-img {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* Ukuran gambar lebih besar */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fasilitas-item p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+.tombol-fasilitas{
+    text-align: left;
+    margin-top: 10px;
+}
+.btn-fasilitas{
+    background-color: rgba(54, 66, 54, 0.534);
+    color: white;
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgb(0, 0, 0); /* Menambahkan box-shadow */
+}
+
+/* Responsif untuk ukuran layar lebih kecil */
+@media (max-width: 768px) {
+    .fasilitas-container {
+        flex-direction: column; /* Untuk layar kecil, stack elemen secara vertikal */
+        text-align: center; /* Rata tengah untuk teks */
+    }
+
+    .fasilitas-images {
+        grid-template-columns: 1fr; /* Satu kolom untuk gambar */
+    }
+}
+
+
+/* Maps */
+
+/* footer */
+/* Styling untuk Footer */
+#footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Agar responsif pada layar kecil */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-container a{
+    text-decoration: none;
+    color: white;
+    font:arial;
+}
+
+
+.footer-info, .footer-contact {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+}
+
+.footer-info h3, .footer-contact h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-info p, .footer-contact p {
+    font-size: 16px;
+    margin: 5px 0;
+    margin-left: 180px;
+    color: white;
+    text-align: left;
+}
+
+.footer-contact a {
+    color: white; /* Warna biru untuk link */
+    text-decoration: none;
+}
+/* Footer bottom */
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsif untuk ukuran layar lebih kecil */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-info, .footer-contact {
+        padding: 10px;
+        margin: 10px 0;
+    }
+}
