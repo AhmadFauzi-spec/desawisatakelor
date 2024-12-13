@@ -1,11 +1,10 @@
-/* Resetting default margin dan padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Styling untuk navbar */
+/*  navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -15,7 +14,7 @@
 }
 
 .navbar .logo img {
-    height: 100px; /* Sesuaikan ukuran logo */
+    height: 100px; 
     margin-top: 10px;
     margin-left: 20px;
 }
@@ -38,25 +37,23 @@
     transition: background-color 0.3s ease;
 }
 
-/* Hover effect untuk link navbar */
 .navbar .nav-links li a:hover {
     background-color: #555;
     border-radius: 5px;
 }
 
-/* Styling untuk section */
+/* judul */
 .hero {
     padding: 10px;
     font-family: poppins;
 }
 
 
-/* Styling untuk bagian hero */
 .hero {
     background-color: rgba(54, 66, 54, 0.534);
     background-size: cover;
     background-position: center;
-    height: 200px; /* Membuat hero section memenuhi seluruh layar */
+    height: 200px; 
     width: 100%;
     display: flex;
     justify-content: center;
@@ -104,7 +101,7 @@
 .kolom-kiri, .kolom-kanan {
     padding: 20px;
     border-radius: 8px;
-    width: 48%; /* Setiap kolom mengambil hampir setengah lebar */
+    width: 48%; 
 }
 .kolom-kiri{
     margin-left: 30px;
@@ -139,7 +136,6 @@ p {
 
 
 /* footer */
-/* Styling untuk Footer */
 #footer {
     margin-top: 30px;
     background-color: #333;
@@ -153,7 +149,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    flex-wrap: wrap; /* Agar responsif pada layar kecil */
+    flex-wrap: wrap; 
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -184,11 +180,10 @@ p {
 }
 
 .footer-contact a {
-    color: white; /* Warna biru untuk link */
+    color: white; 
     text-decoration: none;
 }
 
-/* Footer bottom */
 .footer-bottom {
     text-align: center;
     padding: 10px;
@@ -201,7 +196,6 @@ p {
     color: white;
 }
 
-/* Responsif untuk ukuran layar lebih kecil */
 @media (max-width: 768px) {
     .footer-container {
         flex-direction: column;

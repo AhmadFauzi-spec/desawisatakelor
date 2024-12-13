@@ -1,253 +1,247 @@
-/* Resetting default margin dan padding */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Styling untuk navbar */
+/* navbar */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: rgba(54, 66, 54, 0.534);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(54, 66, 54, 0.534);
 }
 
 .navbar .logo img {
-    height: 100px; /* Sesuaikan ukuran logo */
-    margin-top: 10px;
-    margin-left: 20px;
+  height: 100px;
+  margin-top: 10px;
+  margin-left: 20px;
 }
 
 .navbar .nav-links {
-    list-style-type: none;
-    display: flex;
+  list-style-type: none;
+  display: flex;
 }
 
 .navbar .nav-links li {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .navbar .nav-links li a {
-    font-family: poppins;
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 20px;
-    padding: 8px 8px;
-    transition: background-color 0.3s ease;
+  font-family: poppins;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 8px 8px;
+  transition: background-color 0.3s ease;
 }
 
-/* Hover effect untuk link navbar */
 .navbar .nav-links li a:hover {
-    background-color: #555;
-    border-radius: 5px;
+  background-color: #555;
+  border-radius: 5px;
 }
 
-/* Styling untuk section */
 .hero {
-    padding: 10px;
-    font-family: poppins;
+  padding: 10px;
+  font-family: poppins;
 }
 
-
-/* Styling untuk bagian hero */
+/* bagian judul */
 .hero {
-    background-color: rgba(54, 66, 54, 0.534);
-    background-size: cover;
-    background-position: center;
-    height: 200px; /* Membuat hero section memenuhi seluruh layar */
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  background-color: rgba(54, 66, 54, 0.534);
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .hero .hero-content p {
-    font-size: 24px;
-    font-weight: lighter;
-    margin-bottom: 20px;
-    color: #ffffff;
+  font-size: 24px;
+  font-weight: lighter;
+  margin-bottom: 20px;
+  color: #ffffff;
 }
 .hero .hero-content h1 {
-    font-size: 48px;
-    font-weight: bold;
-    color: #ffffff;
+  font-size: 48px;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 /* paket wisata */
 h2 {
-    padding: 20px;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    font-size: 3rem;
-    font-family: poppins;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 3rem;
+  font-family: poppins;
 }
 
 .paket {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
-    padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 30px;
 }
 /* Kolom kiri (Foto) */
 .kolom-kiri {
-    flex: 6;
-    padding-right: 20px;
+  flex: 6;
+  padding-right: 20px;
 }
 
 .kolom-kiri .foto {
-    width: 75%;
-    height: auto;
-    border-radius: 10px;
-    margin-left: 75px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.582);
-    transition: transform 0.3s ease,;
+  width: 75%;
+  height: auto;
+  border-radius: 10px;
+  margin-left: 75px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.582);
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .kolom-kiri .foto:hover {
-    transform: scale(1.1);
+  transform: scale(1.3);
 }
 
-/* Kolom kanan (Keterangan & Fasilitas) */
+/* Kolom kanan */
 .kolom-kanan {
-    flex: 4;
-    padding-left: 20px;
+  flex: 4;
+  padding-left: 20px;
 }
 
 .kolom-kanan h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .kolom-kanan h4 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-family: poppins;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: poppins;
 }
 
 .kolom-kanan p {
-    font-size: 24px;
-    margin-bottom: 15px;
-    text-align: justify;
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: justify;
 }
 
 .kolom-kanan ul {
-    padding-left: 0;
+  padding-left: 0;
 }
 
 .kolom-kanan ul li {
-    font-size: 24px;
-    margin-bottom: 5px;
+  font-size: 24px;
+  margin-bottom: 5px;
 }
 
-/* bottom pesan */
+/* tombol hubungi */
 .tombol-hubungi {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: Arial, sans-serif;
 }
 
-/* Style untuk tombol btn-booking */
 .btn-booking {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 15px 30px;
-    background-color: rgba(54, 66, 54, 0.534);
-    color: white;
-    font-size: 16px;
-    text-decoration: none; /* Menghilangkan garis bawah */
-    border-radius: 50px;
-    transition: background-color 0.3s, transform 0.3s; /* Efek transisi */
-    box-shadow: 0 4px 8px rgb(0, 0, 0);;
+  display: inline-block;
+  color: white;
+  margin-top: 30px;
+  padding: 15px 30px;
+  background-color: #28a745;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 8px rgb(0, 0, 0);
 }
 
-/* Efek saat tombol di-hover */
 .btn-booking:hover {
-    background-color: #218838; /* Warna hijau lebih gelap */
-    transform: scale(1.1); /* Membesarkan tombol saat di-hover */
+  background-color: #218838;
+  transform: scale(1.1);
 }
 
-/* Menambahkan efek bayangan pada tombol */
 .btn-booking:active {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan saat tombol ditekan */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* footer */
-/* Styling untuk Footer */
 #footer {
-    background-color: #333;
-    color: #fff;
-    padding: 40px 20px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
+  background-color: #333;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
 .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap; /* Agar responsif pada layar kecil */
-    max-width: 1200px;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.footer-container a{
-    text-decoration: none;
-    color: white;
-    font:arial;
-}
-
-
-.footer-info, .footer-contact {
-    flex: 1;
-    padding: 20px;
-    margin: 10px;
+.footer-container a {
+  text-decoration: none;
+  color: white;
+  font: arial;
 }
 
-.footer-info h3, .footer-contact h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
+.footer-info,
+.footer-contact {
+  flex: 1;
+  padding: 20px;
+  margin: 10px;
 }
 
-.footer-info p, .footer-contact p {
-    font-size: 16px;
-    margin: 5px 0;
-    margin-left: 180px;
-    color: white;
-    text-align: left;
+.footer-info h3,
+.footer-contact h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-info p,
+.footer-contact p {
+  font-size: 16px;
+  margin: 5px 0;
+  margin-left: 180px;
+  color: white;
+  text-align: left;
 }
 
 .footer-contact a {
-    color: white; /* Warna biru untuk link */
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
-/* Footer bottom */
+
 .footer-bottom {
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
 }
 
 .footer-bottom p {
-    font-size: 14px;
-    text-align: center;
-    color: white;
+  font-size: 14px;
+  text-align: center;
+  color: white;
 }
 
-/* Responsif untuk ukuran layar lebih kecil */
 @media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-    }
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .footer-info, .footer-contact {
-        padding: 10px;
-        margin: 10px 0;
-    }
+  .footer-info,
+  .footer-contact {
+    padding: 10px;
+    margin: 10px 0;
+  }
 }

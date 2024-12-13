@@ -1,11 +1,9 @@
-/* Resetting default margin dan padding */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Styling untuk navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -15,7 +13,7 @@
 }
 
 .navbar .logo img {
-  height: 100px; /* Sesuaikan ukuran logo */
+  height: 100px; 
   margin-top: 10px;
   margin-left: 20px;
 }
@@ -38,13 +36,12 @@
   transition: background-color 0.3s ease;
 }
 
-/* Hover effect untuk link navbar */
 .navbar .nav-links li a:hover {
   background-color: #555;
   border-radius: 5px;
 }
 
-/* Styling untuk hero */
+/* bagian judul */
 .hero {
   padding: 10px;
   font-family: poppins;
@@ -55,12 +52,11 @@
   color: white;
 }
 
-/* Styling untuk bagian hero */
 .hero {
   background-color: rgba(54, 66, 54, 0.534);
   background-size: cover;
   background-position: center;
-  height: 200px; /* Membuat hero section memenuhi seluruh layar */
+  height: 200px; 
   width: 100%;
   display: flex;
   justify-content: center;
@@ -74,8 +70,7 @@
   color: #ffffff;
 }
 
-/* Styling untuk container yang memuat foto-foto */
-
+/* Kegiatan */
 .nama-kegiatan {
   padding: 20px;
   margin-top: 20px;
@@ -89,27 +84,34 @@
   margin: 20px;
 }
 
-/* Styling untuk setiap card foto */
 .card {
-  width: 50%; /* Setiap card mengambil 30% dari lebar container */
+  width: 50%; 
   text-align: center;
 }
 
-/* Styling gambar agar responsif dan memiliki ukuran maksimal */
 .photo {
   width: 100%;
   height: auto;
   border-radius: 12px;
   margin-top: 50px;
+  transition: background-color 0.3s, transform 0.3s;
+
 }
 
 .photo2 {
   width: 100%;
   height: 350px;
   border-radius: 12px;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-/* Styling untuk keterangan h2 di atas gambar */
+.photo:hover {
+  transform: scale(1.1);
+}
+.photo2:hover {
+  transform: scale(1.1);
+}
+
 h2 {
   font-size: 40px;
   color: #333;
@@ -120,7 +122,6 @@ h2 {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-/* Styling untuk keterangan p di bawah gambar */
 p {
   font-size: 18px;
   color: #666;
@@ -130,7 +131,6 @@ p {
 }
 
 /* footer */
-/* Styling untuk Footer */
 #footer {
   margin-top: 30px;
   background-color: #333;
@@ -144,7 +144,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: wrap; /* Agar responsif pada layar kecil */
+  flex-wrap: wrap; 
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -177,7 +177,7 @@ p {
 }
 
 .footer-contact a {
-  color: white; /* Warna biru untuk link */
+  color: white; 
   text-decoration: none;
 }
 
