@@ -125,6 +125,8 @@
 /* Kegiatan yang Ditawarkan */
 .kegiatan {
     padding: 120px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: rgba(255, 255, 255, 0.8);
     margin-top: 20px;
     margin-bottom: 20px;
@@ -296,7 +298,14 @@
 
 
 /* Maps */
+.maps {
+text-align: center;
+margin-bottom: 50px;
+}
 
+.maps h2 {
+    margin-bottom: 20px;
+}
 /* footer */
 #footer {
     background-color: #333;
@@ -319,7 +328,6 @@
     color: white;
     font:arial;
 }
-
 
 .footer-info, .footer-contact {
     flex: 1;
