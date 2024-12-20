@@ -126,7 +126,6 @@ p {
     font:arial;
 }
 
-
 .footer-info, .footer-contact {
     flex: 1;
     padding: 20px;
@@ -150,7 +149,8 @@ p {
     color: white; 
     text-decoration: none;
 }
-/* Footer bottom */
+
+
 .footer-bottom {
     text-align: center;
     padding: 10px;

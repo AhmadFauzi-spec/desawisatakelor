@@ -177,38 +177,35 @@ h2 {
   color: #fff;
   padding: 40px 20px;
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .footer-container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
   max-width: 1200px;
   margin: 0 auto;
 }
-.footer-container a {
+.footer-container a{
   text-decoration: none;
   color: white;
-  font: arial;
+  font:arial;
 }
 
-.footer-info,
-.footer-contact {
+.footer-info, .footer-contact {
   flex: 1;
   padding: 20px;
   margin: 10px;
 }
 
-.footer-info h3,
-.footer-contact h3 {
+.footer-info h3, .footer-contact h3 {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-.footer-info p,
-.footer-contact p {
+.footer-info p, .footer-contact p {
   font-size: 16px;
   margin: 5px 0;
   margin-left: 180px;
@@ -217,9 +214,10 @@ h2 {
 }
 
 .footer-contact a {
-  color: white;
+  color: white; 
   text-decoration: none;
 }
+
 
 .footer-bottom {
   text-align: center;
@@ -235,13 +233,12 @@ h2 {
 
 @media (max-width: 768px) {
   .footer-container {
-    flex-direction: column;
-    text-align: center;
+      flex-direction: column;
+      text-align: center;
   }
 
-  .footer-info,
-  .footer-contact {
-    padding: 10px;
-    margin: 10px 0;
+  .footer-info, .footer-contact {
+      padding: 10px;
+      margin: 10px 0;
   }
 }
